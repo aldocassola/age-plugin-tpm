@@ -10,7 +10,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/foxboron/age-plugin-tpm/plugin"
+	"github.com/aldocassola/age-plugin-tpm/plugin"
 	"github.com/google/go-tpm/tpm2/transport"
 	"github.com/spf13/cobra"
 	"golang.org/x/term"
@@ -393,7 +393,7 @@ func RunPlugin(cmd *cobra.Command, args []string) error {
 	return nil
 }
 
-func pluginFlags(cmd *cobra.Command, opts *PluginOptions) {
+func pluginFlags(cmd *cobra.Command, _ *PluginOptions) {
 	flags := cmd.Flags()
 	flags.SortFlags = false
 

@@ -1,4 +1,4 @@
-module github.com/foxboron/age-plugin-tpm
+module github.com/aldocassola/age-plugin-tpm
 
 go 1.20
 

@@ -60,11 +60,7 @@ func NewTPMDevice(tpmPath string, isSwtpm bool) (*TPMDevice, error) {
 	}
 
 	// If we don't pass a path to OpenTPM then we have the tpmrm0 and tpm0 fallbacks
-	if tpmPath != "" {
-		tpm, err = transport.OpenTPM(tpmPath)
-	} else {
-		tpm, err = transport.OpenTPM()
-	}
+	tpm, err = openTPM(tpmPath)
 	if err != nil {
 		return nil, err
 	}
