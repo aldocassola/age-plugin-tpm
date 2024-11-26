@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/foxboron/age-plugin-tpm/plugin"
+	"github.com/aldocassola/age-plugin-tpm/plugin"
 	"github.com/spf13/cobra"
 )
 

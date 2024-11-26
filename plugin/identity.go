@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/foxboron/age-plugin-tpm/internal/bech32"
+	"github.com/aldocassola/age-plugin-tpm/internal/bech32"
 	"github.com/google/go-tpm/tpm2"
 )
 
